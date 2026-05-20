@@ -13,4 +13,4 @@ jobs:
           GH_TOKEN: "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"
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          GREETING: "Hello to you too! :sparkles::sparkles::sparkles:"
+          GREETING: "I missed Ya! :sparkles::sparkles::sparkles: !!"
