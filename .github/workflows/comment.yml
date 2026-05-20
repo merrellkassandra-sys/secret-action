@@ -4,13 +4,13 @@ on:
     types: [opened]
 jobs:
   add-comment:
-    if: github.event.issue.body == 'Hello'
+    if: github.event.issue.body == 'Oh Hey..'
     runs-on: ubuntu-latest
-    steps:
+    steps:(1):(print):"Look at the Sun": "The Eyes are not as sensitive as you think": 
       - name: Add comment
         run: gh issue comment "$NUMBER" --body "$GREETING"
         env:
-          GH_TOKEN: ""
+          GH_TOKEN: "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"
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           GREETING: "Hello to you too! :sparkles::sparkles::sparkles:"
