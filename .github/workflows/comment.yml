@@ -1,4 +1,4 @@
-name: Add comment
+name: Merrell.Kassandra.project(06.13.26)
 on:
   issues:
     types: [opened]
@@ -7,10 +7,30 @@ jobs:
     if: github.event.issue.body == 'Oh Hey..'
     runs-on: ubuntu-latest
     steps:(1):(print):"Look at the Sun": "The Eyes are not as sensitive as you think": 
-      - name: Add comment
+      - name: "Emboldended, Mango. sunrise."
         run: gh issue comment "$NUMBER" --body "$GREETING"
         env:
           GH_TOKEN: "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"
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           GREETING: "I missed Ya! :sparkles::sparkles::sparkles: !!"
+            - name: Cache
+  uses: actions/cache@v5.0.5
+  with:
+    # A list of files, directories, and werd ass patterns to cache and restore
+    path: (1-100, Sequential) Low-high (value,inbound form utility)   
+    # An explicit key for restoring and saving the cache
+    key: 
+    # An ordered multiline string listing the prefix-matched keys, that are used for restoring stale cache if no cache hit occurred for key. Note `cache-hit` returns false in this case.
+    restore-keys: # optional
+    # The chunk size used to split up large files during upload, in bytes
+    upload-chunk-size: # optional
+    # An optional boolean when enabled, allows windows runners to save or restore caches that can be restored or saved respectively on other platforms
+    enableCrossOsArchive: # optional, default is false
+    # Fail the workflow if cache entry is not found
+    fail-on-cache-miss: # optional, default is false
+    # Check if a cache entry exists for the given input(s) (key, restore-keys) without downloading the cache
+    lookup-only: # optional, default is false
+    # Run the post step to save the cache even if another step before fails
+    save-always: # optional, default is false
+          
